@@ -1,0 +1,45 @@
+<!--To create a newfile using windows cmd-->
+call > test.txt
+<!--to copy to clipboard in windows-->
+clip < this is the sample
+<!--to create a file and content in it in windows-->
+echo "Hi there this the sample text" >>sample.txt
+<!--to delete account in git in computer-->
+git credential-manager delete https://github.com
+<!--to delete the working .git file delete the directory and clone again-->
+<!--to push to new git repo-->
+git push -u origin main -->'u' means push to central branch always(upstream) -->"Upstream" would refer to the main repo that other people will be pulling from,
+e.g. your GitHub repo. The -u option automatically sets that upstream for you, linking your repo to a central one. That way, in the future,
+Git "knows" where you want to push to and where you want to pull from,
+so you can use git pull or git push without arguments. A little bit down, this article explains and demonstrates this concept.
+When you push a new branch the first time use: >git push -u origin
+After that, you can just type a shorter command: >git push
+The first-time -u option created a persistent upstream tracking branch with your local branch.
+<!--to get git status-->
+git status
+<!--to stage the changes in git -->
+git add . --->all in the working directory
+you can use names also -->git add names.txt
+<!--to commit into repo-->
+git commit -m""--->-m is the message
+<!--to get all git repos history-->
+git log
+<!--to unstage the files-->
+git restore --staged 'filename'
+<!-- to delete commit,get the has code of commit just below it-->
+git reset 'code'(8eFdRtt5t....)
+<!--to make a change that is not in another branch,not in the branch in but in side-->
+git stash
+<!--to make the side change into main-->
+git stash pop
+<!--to make the stash delete-->
+git stash clean
+<!--to linking the git cmd with github-->
+git remote add origin 'repo-name'
+<!--to get all the linked repo with the folder-->
+git remote -v
+<!--what is upstream-->
+it is the main branch in the repo-->for the forked one
+<!--to get the graph of the branches and commit-->
+git log --all --graph
+<!---->
